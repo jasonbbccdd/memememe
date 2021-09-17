@@ -1,0 +1,204 @@
+body {
+  font-family: "Sofia", sans-serif;
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg,
+      #2b2b2b 0%,
+      #2b2b2b 10%,
+      #222222 0%,
+      #222222 50%) 0 / 15px 15px;
+}
+
+/* NAVBAR */
+#navbar {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .site-icon {
+  width: auto;
+  height: 40px;
+}
+
+#navbar .nav-item {
+  height: 1px;
+  min-height: 52px;
+  display: table;
+}
+
+#navbar .nav-item a {
+  padding: 0 10px;
+  color: rgb(200, 200, 200);
+  /* font-size: 18px; */
+  font-family: Iceland;
+  font-size: xx-large;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+#navbar .nav-item a:hover {
+  border-top: 2px solid rgb(0, 0, 255);
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0));
+  /* font-size: xxx-large; */
+}
+
+/* HEADER */
+#header {
+  position: relative;
+  background-image: url(https://i.imgur.com/sZbhFmk.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 52px);
+}
+
+#header #container {
+  /*  color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+#container.bird {
+  cursor: url("https://i.imgur.com/3wYVGnn.png"),
+  auto;
+}
+
+#container.axe {
+  cursor: url("https://i.imgur.com/lNRJPbo.png"),
+  auto;
+}
+
+#container.btc {
+  cursor: url("https://i.imgur.com/9IzVCWM.png"),
+  auto;
+}
+
+#container.tag {
+  cursor: url("https://i.imgur.com/z1IM5ZS.png"),
+    auto;
+}
+
+#container p {
+  line-height: initial;
+  cursor: pointer;
+}
+
+/* MAIN */
+#main {
+  color: white;
+}
+
+#main .item>*:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#main .item>div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .item .bg-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+
+#main .item .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://i.imgur.com/NvKXQpY.jpg);
+  background-size: cover;
+}
+
+#main .item a {
+  color: blue;
+}
+
+#footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(50, 50, 50);
+  color: rgb(150, 150, 150);
+}
+
+#footer>div>div:first-child {
+  color: rgb(200, 200, 200);
+  font-size: 18px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 5px 0;
+}
+
+#footer .nav-links {
+  flex-grow: 1;
+}
+
+#footer .random-text {
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+#footer .social-links {
+  flex-grow: 1;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+#footer ul li a {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+
+#footer ul li a:hover {
+  color: rgb(200, 200, 200);
+}
+
+/*  for the overlay effect  */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*  for the overlay effect  */
